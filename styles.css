@@ -187,13 +187,14 @@ form{
     align-items: center;
     text-align: center;
     justify-content: center;
+    gap: 10px;
 }
 
 
 form input{
     border-radius: 15px;
-    border: 5px solid #48BB78;
-    height:30px;
+    border: 5px solid #fff;
+    height:20px;
     padding: 5px;
     width: 300px;
 }
