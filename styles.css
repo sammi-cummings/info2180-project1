@@ -1,11 +1,217 @@
 /* Add your CSS to this file */
+
+
+/*Styling for the default settings*/
+:root{
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    --font-size: 18px;
+}
+
+
+/*Body styling*/
 body {
     margin: 0;
     font-size: 16px;
+    font-family: var(--font-family);
 }
 
+
+/*Styling for all main containers*/
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+}
+
+
+/*Styling for header*/
+header{
+    background-color: rgb(255, 255, 255);
+}
+
+header div, ul, h1{
+    font-size: var(--font-size);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+}
+
+nav a{
+    color: #6b7280;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color:#5A67D8;
+}
+
+/*Styling for Hero Overview*/
+.overview-hero{
+    background-color: #E2E8F0;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 20px;
+}
+
+.overview-hero-image{
+    float: left;
+    padding: 0px 30px 0px 0px;
+}
+
+
+/*Styling for Learn About*/
+.learn-about{
+    padding-bottom: 30px;
+}
+
+.learn-about h2{
+    font-size: 24px;
+    color: #48BB78;
+}
+
+.learn-about h3{
+    font-size: 21px;
+    color: #48BB78;
+}
+
+.cards{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 90px;
+}
+
+.card{
+    border: 5px solid #E2E8F0;
+    height: 400px;
+    box-shadow: 0px 4px 16px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+.card-body h3{
+    font-size: 21px;
+}
+
+
+/*Styling for COVID-19 Testing Programme*/
+.testing{
+    background-color:#4A5568;
+    color: white;
+    padding: 40px;
+}
+
+.testing div{
+    display: flex;
+    grid-template-columns: auto auto;
+}
+
+.testing-description{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.testing-description p{ 
+    margin-right: 160px;
+}
+
+.cta{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 55px;
+}
+
+
+.cta a{
+    background-color: #48BB78;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+}
+
+
+/*Styling for Recent Stories*/
+.stories{
+    padding: 50px 0px 50px 0px;
+}
+
+article{
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+article img{
+    float: left;
+    border-radius: 50%;
+}
+
+.article-body a{
+  text-decoration: none;
+}
+
+
+/*Styling for Newsletter*/
+.newsletter{
+    background-color: #48BB78;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.newsletter div{
+    justify-content: center;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+form input{
+    border-radius: 15px;
+    border: 5px solid #48BB78;
+    height:30px;
+    padding: 5px;
+    width: 300px;
+}
+
+
+form button{
+    background-color:#567D8A;
+    border: 5px solid #567D8A;
+    color: white;
+    height:40px;
+    border-radius: 8px;
+}
+
+
+/*Styling for Footer*/
+footer{
+    background-color:#4A5568;
+    color: rgb(255,255,255);
+    margin:0;
+    padding: 30px 0px 30px 0px;
 }
