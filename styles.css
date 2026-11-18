@@ -71,7 +71,8 @@ nav a:hover{
 
 /*Styling for Learn About*/
 .learn-about{
-    padding-bottom: 30px;
+    padding-bottom: 35px;
+
 }
 
 .learn-about h2{
@@ -84,19 +85,27 @@ nav a:hover{
     color: #48BB78;
 }
 
+.learn-about p{
+    padding: 10px;
+}
+
 .cards{
     display: grid;
     align-items: center;
     justify-content: center;
     grid-template-columns: auto auto auto;
-    gap: 90px;
+    gap: 10px;
 }
 
 .card{
     border: 5px solid #E2E8F0;
-    height: 400px;
+    height: 390px;
     box-shadow: 0px 4px 16px rgba(0,0,0,0.4);
     text-align: center;
+}
+
+.card img{
+    padding-top: 10px;
 }
 
 .card-body h3{
@@ -178,7 +187,6 @@ article img{
 }
 
 .newsletter div{
-    justify-content: center;
     text-align: center;
 }
 
@@ -206,6 +214,11 @@ form button{
     color: white;
     height:40px;
     border-radius: 8px;
+}
+
+.message{
+    color: white;
+    padding: 20px;
 }
 
 
